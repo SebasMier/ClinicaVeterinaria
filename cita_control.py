@@ -14,3 +14,6 @@ class CitaControl(Cita):
         print(f"Veterinario: {self.veterinario.nombre}")
         print(f"Estado: {self.estado}")
         print(f"Motivo de control: {self.motivo_control}")
+
+    def cambiar_estado(self, nuevo_estado):
+        self.estado = nuevo_estado

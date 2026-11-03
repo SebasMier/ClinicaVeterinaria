@@ -14,3 +14,6 @@ class CitaVacunacion(Cita):
         print(f"Veterinario: {self.veterinario.nombre}")
         print(f"Estado: {self.estado}")
         print(f"Vacuna: {self.vacuna}")
+
+    def cambiar_estado(self, nuevo_estado):
+        self.estado = nuevo_estado

@@ -12,3 +12,6 @@ class CitaGeneral(Cita):
         print(f"Mascota: {self.mascota.nombre}")
         print(f"Veterinario: {self.veterinario.nombre}")
         print(f"Estado: {self.estado}")
+
+    def cambiar_estado(self, nuevo_estado):
+        self.estado = nuevo_estado

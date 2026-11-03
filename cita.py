@@ -12,3 +12,7 @@ class Cita(ABC):
     @abstractmethod
     def mostrar_informacion(self):
         pass
+
+    @abstractmethod
+    def cambiar_estado(self, nuevo_estado):
+        pass
