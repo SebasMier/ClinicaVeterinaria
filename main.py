@@ -5,7 +5,15 @@ from cita_general import CitaGeneral
 from cita_vacunacion import CitaVacunacion
 from cita_control import CitaControl
 
-propietario1 = Propietario("Juan", "123456789", "Juan@gmail.com")
+propietario1 = Propietario("Juan Alvarez", "123456789", "Juan@gmail.com")
+propietario1.mostrar_informacion()
+print()
+
+propietario1.cambiar_correo("Juan123@gmail.com")
+propietario1.mostrar_informacion()
+print()
+
+propietario1.cambiar_correo("")
 propietario1.mostrar_informacion()
 print()
 
@@ -13,8 +21,28 @@ mascota1 = Mascota("Luu", 3, 2, "Perro", propietario1)
 mascota1.mostrar_informacion()
 print()
 
+mascota1.cambiar_edad(4, 1)
+mascota1.mostrar_informacion()
+print()
+
+mascota1.cambiar_edad(3, 14)
+mascota1.mostrar_informacion()
+print()
+
+mascota1.cambiar_edad(-1, 0)
+mascota1.mostrar_informacion()
+print()
+
 veterinario1 = Veterinario(
     "Carlos Alberto", "987654321", "3148220936", "Cirujano")
+veterinario1.mostrar_informacion()
+print()
+
+veterinario1.cambiar_telefono("3127550937")
+veterinario1.mostrar_informacion()
+print()
+
+veterinario1.cambiar_telefono("")
 veterinario1.mostrar_informacion()
 print()
 

@@ -7,7 +7,7 @@ class Cita(ABC):
         self.hora = hora
         self.mascota = mascota
         self.veterinario = veterinario
-        self.estado = estado
+        self._estado = estado
 
     @abstractmethod
     def mostrar_informacion(self):

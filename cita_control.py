@@ -12,8 +12,8 @@ class CitaControl(Cita):
         print(f"Hora: {self.hora}")
         print(f"Mascota: {self.mascota.nombre}")
         print(f"Veterinario: {self.veterinario.nombre}")
-        print(f"Estado: {self.estado}")
+        print(f"Estado: {self._estado}")
         print(f"Motivo de control: {self.motivo_control}")
 
     def cambiar_estado(self, nuevo_estado):
-        self.estado = nuevo_estado
+        self._estado = nuevo_estado

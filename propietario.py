@@ -8,3 +8,10 @@ class Propietario:
         print(f"Nombre: {self.nombre}")
         print(f"Teléfono: {self.telefono}")
         print(f"Correo: {self._correo}")
+
+    def cambiar_correo(self, correo):
+
+        if correo == (""):
+            print("El correo no puede estar vacío")
+        else:
+            self._correo = correo
