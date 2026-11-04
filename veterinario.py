@@ -1,3 +1,6 @@
+from excepciones import TelefonoInvalidoError
+
+
 class Veterinario:
     def __init__(self, nombre, identificacion, telefono, especialidad):
         self.nombre = nombre
@@ -13,6 +16,6 @@ class Veterinario:
 
     def cambiar_telefono(self, telefono):
         if telefono == (""):
-            print("El teléfono no puede estar vacío")
+            raise TelefonoInvalidoError("El teléfono no puede estar vacío")
         else:
             self._telefono = telefono

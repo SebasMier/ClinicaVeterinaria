@@ -1,3 +1,6 @@
+from excepciones import EdadInvalidaError
+
+
 class Mascota:
     def __init__(self, nombre, años, meses, tipo, propietario):
         self.nombre = nombre
@@ -14,7 +17,7 @@ class Mascota:
 
     def cambiar_edad(self, años, meses):
         if años < 0 or meses < 0 or meses > 11:
-            print("La edad no es valida")
+            raise EdadInvalidaError("La edad no es valida")
         else:
             self._años = años
             self._meses = meses

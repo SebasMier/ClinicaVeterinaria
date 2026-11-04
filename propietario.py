@@ -1,3 +1,8 @@
+
+
+from excepciones import CorreoInvalidoError
+
+
 class Propietario:
     def __init__(self, nombre, telefono, correo):
         self.nombre = nombre
@@ -12,6 +17,6 @@ class Propietario:
     def cambiar_correo(self, correo):
 
         if correo == (""):
-            print("El correo no puede estar vacío")
+            raise CorreoInvalidoError("El correo no puede estar vacío")
         else:
             self._correo = correo
