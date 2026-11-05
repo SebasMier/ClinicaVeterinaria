@@ -15,3 +15,6 @@ class CitaGeneral(Cita):
 
     def cambiar_estado(self, nuevo_estado):
         self._estado = nuevo_estado
+
+        if nuevo_estado == "Completada":
+            print("Consulta general completada")

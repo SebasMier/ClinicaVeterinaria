@@ -17,3 +17,6 @@ class CitaControl(Cita):
 
     def cambiar_estado(self, nuevo_estado):
         self._estado = nuevo_estado
+
+        if nuevo_estado == "Completada":
+            print(f"Control completado: {self.motivo_control}")

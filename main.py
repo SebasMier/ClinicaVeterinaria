@@ -177,7 +177,7 @@ for cita in citas:
     cita.mostrar_informacion()
     print()
 
-print("--- PRUEBA: POLIMORFISMO AL CAMBIAR ESTADO ---")
+print("--- PRUEBA DE POLIMORFISMO: SIMULACION DE CANCELACION DE CITAS ---")
 print()
 
 for cita in citas:
