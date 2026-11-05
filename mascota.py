@@ -1,4 +1,5 @@
 from excepciones import EdadInvalidaError
+from historial_clinico import HistorialClinico
 
 
 class Mascota:
@@ -8,6 +9,7 @@ class Mascota:
         self._meses = meses
         self.tipo = tipo
         self.propietario = propietario
+        self.historial_clinico = HistorialClinico()
 
     def mostrar_informacion(self):
         print(f"Nombre: {self.nombre}")

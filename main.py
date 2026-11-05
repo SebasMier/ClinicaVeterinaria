@@ -134,11 +134,22 @@ cita2 = CitaVacunacion("15/11/2026", "11:00 am", mascota1,
 cita2.mostrar_informacion()
 print()
 
+
 print("--- PRUEBA: CAMBIO DE ESTADO CITA VACUNACION ---")
 print()
 
 cita2.cambiar_estado("Completada")
 cita2.mostrar_informacion()
+print()
+
+print("--- REGISTRO MEDICO: VACUNACION DE LUU ---")
+print()
+
+mascota1.historial_clinico.agregar_registro(
+    cita2.fecha, "Vacunacion contra la rabia", "Aplicacion de vacuna antirrabica"
+)
+
+mascota1.historial_clinico.mostrar_informacion()
 print()
 
 cita3 = CitaControl("18/11/2026", "12:00 pm", mascota1,
