@@ -136,6 +136,9 @@ El diagrama de clases UML muestra la estructura del sistema de clinica veterinar
 
 En el diagrama se pueden observar las relaciones de herencia entre la clase Cita y sus tres clases derivadas, asi como la composicion entre Mascota e HistorialClinico y las asociaciones entre las diferentes clases del sistema.
 
+El diagrama de clases UML se puede ver en [draw.io](https://app.diagrams.net/#Uhttps://raw.githubusercontent.com/SebasMier/ClinicaVeterinaria/refs/heads/main/SistemaClinicoVeterinario.drawio).
+
+
 
 ## Tecnologias utilizadas
 
